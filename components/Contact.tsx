@@ -17,7 +17,7 @@ export default function Contact() {
 
   // Salin email ke clipboard
   const handleCopyEmail = () => {
-    navigator.clipboard.writeText("anandaferandita@gmail.com");
+    navigator.clipboard.writeText("anandaverans@gmail.com");
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -79,7 +79,7 @@ export default function Contact() {
               </button>
             </div>
             <p className="text-slate-100 font-medium text-sm sm:text-base break-all">
-              anandaferandita@gmail.com
+              anandaverans@gmail.com
             </p>
           </div>
 

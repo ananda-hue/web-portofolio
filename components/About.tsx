@@ -50,42 +50,47 @@ export default function About() {
           </div>
         </div>
 
-        {/* Deskripsi Diri */}
-        <div className="md:col-span-8 space-y-4">
-          <p>
-            Saya adalah lulusan <strong className="text-white">S1 Informatika</strong> Universitas Jenderal Achmad Yani Yogyakarta dengan <strong className="text-blue-400 font-mono">IPK 3,76/4,00</strong>. Spesialis dalam <strong className="text-white">Frontend Development</strong>, <strong className="text-white">UI/UX Design</strong>, serta <strong className="text-white">Data Analytics & NLP</strong>.
-          </p>
+      {/* Deskripsi Diri */}
+<div className="md:col-span-8 space-y-4">
+  <p>
+    Saya adalah lulusan <strong className="text-white">S1 Informatika</strong> Universitas Jenderal Achmad Yani Yogyakarta dengan <strong className="text-blue-400 font-mono">IPK 3,76/4,00</strong>. Memiliki fokus keahlian pada <strong className="text-white">Web & Mobile Development</strong> serta pengolahan data melalui <strong className="text-white">Data Analytics, Machine Learning, & NLP</strong>.
+  </p>
 
-          <p>
-            Berpengalaman merancang ulang (*revamp*) antarmuka UI/UX dan mengembangkan sistem *frontend* untuk proyek peremajaan aplikasi e-Lapor (nama proyek: <strong className="text-slate-100">Lapor Pak</strong>) di Dinas Komunikasi dan Informatika DIY. Saya juga berpengalaman mengolah <strong className="text-white font-mono">2.098 data komentar</strong> menggunakan Python dengan metode <strong className="text-slate-100">SVM & TF-IDF (Akurasi 85%)</strong> hingga tahap pengajuan jurnal nasional.
-          </p>
+  <p>
+    Berpengalaman merancang ulang (<i>revamp</i>) antarmuka UI/UX dan mengembangkan sistem <i>frontend</i> untuk proyek peremajaan aplikasi e-Lapor (nama proyek: <strong className="text-slate-100">Lapor Pak</strong>) di Dinas Komunikasi dan Informatika DIY. Saya juga berpengalaman mengolah <strong className="text-white font-mono">2.098 data komentar</strong> menggunakan Python dengan metode <strong className="text-slate-100">SVM & TF-IDF (Akurasi 85%)</strong> hingga tahap pengajuan jurnal nasional.
+  </p>
 
-          {/* Quick Credibility Badges (Interaktif Klik PDF) */}
-          <div className="flex flex-wrap gap-2 pt-2">
-            <button
-              type="button"
-              onClick={() => setActiveCert(certificates.bnsp)}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-lg shadow-blue-500/5"
-            >
-              🛡️ BNSP Pemrogram Mobile Pratama
-            </button>
+  <p className="text-slate-300 text-sm">
+    Tersertifikasi resmi <strong className="text-white">BNSP Pemrogram Mobile Pratama</strong>, pemegang <strong className="text-white">Hak Cipta (HKI) Kemenkumham RI</strong>, serta memiliki prestasi non-akademik sebagai <strong className="text-white">Penulis Terpilih Puisi Nasional</strong>.
+  </p>
 
-            <button
-              type="button"
-              onClick={() => setActiveCert(certificates.hki)}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-lg shadow-emerald-500/5"
-            >
-              📜 Hak Cipta (HKI) Kemenkumham RI
-            </button>
+  {/* Quick Credibility Badges (Interaktif Klik PDF) */}
+  <div className="flex flex-wrap gap-2 pt-2">
+    <button
+      type="button"
+      onClick={() => setActiveCert(certificates.bnsp)}
+      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:bg-blue-500/20 hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-lg shadow-blue-500/5"
+    >
+      🛡️ BNSP Pemrogram Mobile Pratama
+    </button>
 
-            <button
-              type="button"
-              onClick={() => setActiveCert(certificates.puisi)}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20 hover:bg-purple-500/20 hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-lg shadow-purple-500/5"
-            >
-              ✍️ Penulis Terpilih Puisi Nasional
-            </button>
-          </div>
+    <button
+      type="button"
+      onClick={() => setActiveCert(certificates.hki)}
+      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-lg shadow-emerald-500/5"
+    >
+      📜 Hak Cipta (HKI) Kemenkumham RI
+    </button>
+
+    <button
+      type="button"
+      onClick={() => setActiveCert(certificates.puisi)}
+      className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-purple-500/10 text-purple-400 border border-purple-500/20 hover:bg-purple-500/20 hover:scale-105 active:scale-95 transition-all cursor-pointer shadow-lg shadow-purple-500/5"
+    >
+      ✍️ Penulis Terpilih Puisi Nasional
+    </button>
+  </div>
+
 
           {/* Kartu Informasi Pendidikan */}
           <div className="bg-slate-800/40 border border-slate-700/50 p-6 rounded-2xl space-y-4 mt-6 backdrop-blur-sm">

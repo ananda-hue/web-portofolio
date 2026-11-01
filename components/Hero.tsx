@@ -39,19 +39,24 @@ export default function Hero() {
 
   return (
     <section className="min-h-[85vh] flex flex-col justify-center max-w-5xl mx-auto px-6 py-12 relative overflow-hidden">
-      
+
       <div className="grid md:grid-cols-12 gap-8 items-center">
-        
+
         {/* Kolom Kiri: Teks & Peran Minat */}
         <div className="md:col-span-7 space-y-6 order-2 md:order-1">
-    
+
 
           {/* Nama & Typewriter */}
-          <div>
+          <div className="space-y-1">
+            {/* Sapaan Ramah */}
+            <span className="text-blue-400 font-mono text-sm sm:text-base font-semibold tracking-wide flex items-center gap-2">
+              Halo, saya <span className="animate-bounce inline-block">👋</span>
+            </span>
+
             <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
               Ananda Ferandita
             </h1>
-            
+
             <div className="h-10 mt-2 flex items-center">
               <p className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-400 via-indigo-300 to-cyan-400 bg-clip-text text-transparent font-mono">
                 {displayText}
@@ -60,21 +65,19 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Deskripsi Ringkas & To-The-Point */}
           <p className="text-slate-300 leading-relaxed text-base sm:text-lg">
-            Spesialisasi dalam <strong className="text-white">Web & Mobile Development</strong> serta pengolahan data melalui <strong className="text-white">Data Analytics, Machine Learning, dan Natural Language Processing (NLP)</strong>.
+            Mengembangkan aplikasi interaktif modern dan solusi analisis data berbasis Machine Learning. Cepat beradaptasi dengan teknologi baru, berorientasi pada <i className="italic">problem solving</i>, serta terbiasa bekerja secara mandiri maupun kolaboratif.
           </p>
-
-          {/* Tag Minat Posisi */}
+          {/* Highlight Badges Kredibilitas (Bukan Pengulangan Skill) */}
           <div className="flex flex-wrap gap-2 pt-1">
-            <span className="px-3 py-1 rounded-lg text-xs font-mono font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20">
-              💻 Web & Mobile Development
+            <span className="px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-blue-500/10 text-blue-300 border border-blue-500/20 shadow-sm">
+              🎓 S1 Informatika (IPK 3.76)
             </span>
-            <span className="px-3 py-1 rounded-lg text-xs font-mono font-medium bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">
-              📊 Data Analytics & Processing
+            <span className="px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 shadow-sm">
+              🚀 Ex-Frontend Intern Diskominfo DIY
             </span>
-            <span className="px-3 py-1 rounded-lg text-xs font-mono font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20">
-              🤖 Applied ML & NLP
+            <span className="px-3 py-1.5 rounded-lg text-xs font-mono font-medium bg-purple-500/10 text-purple-300 border border-purple-500/20 shadow-sm">
+              📜 HKI & BNSP Certified
             </span>
           </div>
 
@@ -104,7 +107,7 @@ export default function Hero() {
         {/* Kolom Kanan: Frame Foto Potret */}
         <div className="md:col-span-5 flex justify-center order-1 md:order-2">
           <div className="relative group w-full max-w-[260px] aspect-[3/4] rounded-3xl p-1 bg-gradient-to-tr from-blue-600/40 via-indigo-500/30 to-slate-800/40 shadow-2xl shadow-blue-500/10">
-            
+
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-blue-600 to-cyan-400 opacity-25 blur-lg group-hover:opacity-40 transition-opacity duration-500" />
 
             <div className="relative w-full h-full rounded-[22px] overflow-hidden bg-slate-950 border border-slate-800/80">
